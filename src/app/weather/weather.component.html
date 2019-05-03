@@ -1,16 +1,23 @@
-<h1 align="center">Weather Battle!</h1>
-<h4 align="center">Search two cities and see which city has better weather</h4>
+<div class="container">
+  
+  <div class="card">
+    <div class="card-body">
+      <h1 align="center">Weather Battle!</h1>
+      <h4 align="center">Search two cities and see which city has better weather</h4>
+    </div>
+</div>
 
 <br>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-2">
-      <h3 class="text-center my-2">Search for Weather:</h3>
-      <form
-        [formGroup]="weatherSearchForm"
-        (ngSubmit)="sendToAPIXU(weatherSearchForm.value)"
-      >
+    <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-2">
+              <h3 class="text-center my-2">Search for Weather in:</h3>
+           <form
+             [formGroup]="weatherSearchForm"
+               (ngSubmit)="sendToAPIXU(weatherSearchForm.value)"
+                 >
         <div class="form-group">
           <input
             class="form-control"
@@ -21,8 +28,10 @@
             formControlName="location"
           />
         </div>
+
+
         <div class="text-center">
-          <button type="submit" class="btn btn-success btn-md">
+          <button type="submit" class="mat-raised-button color="primary>
             Search a City
           </button>
         </div>
@@ -33,23 +42,23 @@
       <h3 class="text-left my-2">Weather Details:</h3>
       <p class="text-left">
         Location Searched: {{ this.weatherData?.location.name }}
-        {{ this.weatherData?.location.country }}
       </p>
       <p class="text-left">
         Current weather conditions:
         {{ this.weatherData?.current.condition.text }}
       </p>
       <p class="text-left">
-        Temperature in Degrees Farenheit: {{ this.weatherData?.current.temp_f }}
+        Temperature: {{ this.weatherData?.current.temp_f }} F
       </p>
       <p class="text-left">
         Wind Speed is:
-        {{ this.weatherData?.current.wind_mph }}
+        {{ this.weatherData?.current.wind_mph }} Mph
       </p>
     </div>
 
+ 
     <div class="col-md-2">
-      <h3 class="text-center my-2">Search for Weather:</h3>
+      <h3 class="text-center my-2">Search for Weather in:</h3>
       <form
         [formGroup]="weatherSearchForm"
         (ngSubmit)="sendToAPIXU(weatherSearchForm.value)"
@@ -65,7 +74,7 @@
           />
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-success btn-md">
+          <button type="submit" class="class="mat-raised-button color="primary">
             Search a City
           </button>
         </div>
@@ -76,42 +85,44 @@
       <h3 class="text-left my-2">Weather Details:</h3>
       <p class="text-left">
         Location Searched: {{ this.weatherData?.location.name }}
-        {{ this.weatherData?.location.country }}
       </p>
       <p class="text-left">
         Current weather conditions:
         {{ this.weatherData?.current.condition.text }}
       </p>
       <p class="text-left">
-        Temperature in Degrees Farenheit: {{ this.weatherData?.current.temp_f }}
+        Temperature: {{ this.weatherData?.current.temp_f }} F
       </p>
       <p class="text-left">
         Wind Speed is:
-        {{ this.weatherData?.current.wind_mph }}
+        {{ this.weatherData?.current.wind_mph }} Mph
       </p>
     </div>
   </div>
-
+</div>
+</div>
  <br>
 
-  <div class="container">
+    <div class="card">
+     <div class="card-body">
       <div class="col-md-8">
         <h2>And the Winning City is...</h2>
           <h3 class="text-left my-2">Weather Details:</h3>
           <p class="text-left">
             Location Searched: {{ this.weatherData?.location.name }}
-            {{ this.weatherData?.location.country }}
           </p>
           <p class="text-left">
             Current weather conditions:
             {{ this.weatherData?.current.condition.text }}
           </p>
           <p class="text-left">
-            Temperature in Degrees Farenheit: {{ this.weatherData?.current.temp_f }}
+            Temperature: {{ this.weatherData?.current.temp_f }} F
           </p>
           <p class="text-left">
             Wind Speed is:
-            {{ this.weatherData?.current.wind_mph }}
+            {{ this.weatherData?.current.wind_mph }} Mph
           </p>
         </div>
+      </div>
+    </div>
 </div>
