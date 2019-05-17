@@ -105,20 +105,17 @@
 
     <div class="card">
      <div class="card-body">
-      <div class="col-md-8">
+      <div class="col-md-10">
         <h2>And the Winning City is...</h2>
-          <h3 class="text-left my-2">Weather Details:</h3>
-          <p class="text-left">
-            Location Searched: {{ this.weatherData?.location.name }}
-          </p>
-          <p class="text-left">
+          <h3 class="text-center my-2">Weather Details:</h3>
+          <p class="text-center">
             Current weather conditions:
             {{ this.weatherData?.current.condition.text }}
           </p>
-          <p class="text-left">
+          <p class="text-center">
             Temperature: {{ this.weatherData?.current.temp_f }} F
           </p>
-          <p class="text-left">
+          <p class="text-center">
             Wind Speed is:
             {{ this.weatherData?.current.wind_mph }} Mph
           </p>
@@ -126,3 +123,5 @@
       </div>
     </div>
 </div>
+
+<br>
