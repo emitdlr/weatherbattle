@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import '@angular/material/prebuilt-themes/purple-green.css';
+/* @import "@material/card/mdc-card"; */
 
 HTMLJSCSSREGULARCARD.TMPL.HTMLUSERCARD.TMPL.HTML
 .colorsdemoBasicUsage .card-media {
@@ -25,3 +26,5 @@ HTMLJSCSSREGULARCARD.TMPL.HTMLUSERCARD.TMPL.HTML
   margin: 30px;
   padding: 5px;
   background-color: rgba(205, 205, 205, 0.45); }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

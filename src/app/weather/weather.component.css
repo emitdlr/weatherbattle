@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: gray;
+}
+
+.row div {
+  border: solid;
+  padding: 1em;
+  flex: 1;
+}
+
+
+.card {
+    background-color: gray;
+}
+
+.example-card {
+    background-color: darkgray;
+    max-width: 450px;
+    max-height: 1200;
+    color: black
+  }
