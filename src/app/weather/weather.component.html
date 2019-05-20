@@ -97,23 +97,28 @@
     <div class="card">
       <div class="card-body">
         <div class="col-md-12">
-          <h2 class="text-center my-2">And the Winning City is... {{ this.weatherData?.location.name }}</h2>
-          <h3 class="text-center my-2">Weather Details:</h3>
-          <p class="text-center">
+          <h2 class="text-left my-2">And the Winning City is... {{ this.weatherData?.location.name }}</h2>
+          <h3 class="text-left my-2">Weather Details:</h3>
+          <p class="text-left">
             Current weather conditions:
             {{ this.weatherData?.current.condition.text }}
           </p>
-          <p class="text-center">
+          <p class="text-left">
             Temperature: {{ this.weatherData?.current.temp_f }} F
           </p>
-          <p class="text-center">
+          <p class="text-left">
             Wind Speed is:
             {{ this.weatherData?.current.wind_mph }} Mph
           </p>
         </div>
       </div>
     </div>
-  </div>
+    <!-- <div class="card"> -->
+        <div class="card-body">
+          <div class="col-md-12">
+            <h2 class="text-left my-2">And the Losing City is... {{ this.weatherData?.location.name }}</h2>
+            <p class="text-left">
+  <!-- </div> -->
 </div>
 
 <br>
